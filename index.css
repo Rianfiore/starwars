@@ -14,7 +14,7 @@ img {
 header {
     display: flex;
     flex-direction: column;
-    background: url('img/star\ uó\ topo.png') no-repeat center top;
+    background: url('img/star\ uó\ topo@2x.png') no-repeat center top;
     background-size: cover;
     height: 38.5vw;
     max-height: 735px;
@@ -26,33 +26,92 @@ header div {
 }
 
 header .title {
-    padding-top: 3%;
     position: relative;
-    right: 3%;
     display: flex;
     align-items: center;
+    padding-top: 4%;
+    right: 3%;
 }
 
 header .title .star {
     position: relative;
-    left: 23.5%;
-    transform: scale(1.15);
+    left: 26%;
 }
 
 header .title .kylo-ren {
     z-index: 1;
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 header .title .wars {
     position: relative;
-    right: 5%;
-    transform: scale(1.3);
+    right: 10%;
+
 }
 
 header .title .create-your-legion {
     position: relative;
-    right: 12.5%;
-    padding-top: 15%;
+    right: 19%;
+    padding-top: 12.5%;
     transform: scale(1.3);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    width: 100%;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url('img/sta\ uo\ robot@2x.png') no-repeat center top;
+    background-size: cover;
+    min-height: 720px;
+    width: 100%;
+}
+
+.section1 .about-the-game {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 720px;
+    max-width: 1920px;
+}
+
+.section1 .about-the-game .item1{
+    z-index: 1;
+    padding-left: 12.5%;
+    margin-top: -4%;
+}
+
+.section1 .about-the-game .item2 {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    padding-right: 12.5%;
+}
+
+.section1 .about-the-game .item1 img {
+    width: 90%;
+}
+
+.section1 .about-the-game .item2 img {
+    width: 90%;
+}
+
+.section1 .line {
+    padding: 50px 0px;
+    width: 75.5%;
+    max-width: 1450px;
+}
+
+@media (max-width: 850px) {
+    
 }
