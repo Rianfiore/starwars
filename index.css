@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     outline: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 img {
@@ -76,6 +79,80 @@ main img {
     width: 100%;
 }
 
+.section1 .banner{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(1rem, 3vw, 2rem);
+    padding: 5% 0%;
+    margin-left: 12.5%;
+    margin-top: -3%;
+    width: 100vw;
+    height: 100%;
+    max-width: 350px;
+    min-height: 222px;
+    background: url('img/strom\ trupe\ red.png') no-repeat center;
+    background-size: 110%;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.section1 .banner:hover{
+    background-size: 130%;
+    transform: scale(1.02);
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0, 0.5))
+}
+
+.section1 .banner:hover h2{
+    transform: scale(1.05);
+    text-shadow: 0px 0px 5px rgba(255,255,255,0.8);
+}
+
+.section1 .banner:hover p{
+    opacity: 1;
+    transform: scale(1.0);
+}
+
+.section1 .banner h2 {
+    width: 50%;
+    font-weight: 600;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.section1 .banner p {
+    width: 80%;
+    min-width: 100px;
+    font-weight: 100;
+    letter-spacing: 0.1px;
+    font-size: clamp(0.5rem, 1vw, 1.5rem);
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: all 0.2s ease-in-out;
+}
+
+.section1 .banner button {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2% 10%;
+    font-size: clamp(0.4rem, 0.9vw, 1.4rem);
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.section1 .banner button:hover {
+    transform: scale(1.2);
+    background-color: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(1px);
+}
+
 .section1 .about-the-game {
     position: relative;
     display: flex;
@@ -85,13 +162,7 @@ main img {
     max-width: 1920px;
 }
 
-.section1 .about-the-game .item1{
-    z-index: 1;
-    padding-left: 12.5%;
-    margin-top: -4%;
-}
-
-.section1 .about-the-game .item2 {
+.section1 .about-the-game .item1 {
     display: flex;
     align-self: flex-end;
     justify-content: flex-end;
@@ -102,16 +173,12 @@ main img {
     width: 90%;
 }
 
-.section1 .about-the-game .item2 img {
-    width: 90%;
-}
-
 .section1 .line {
     padding: 50px 0px;
     width: 75.5%;
     max-width: 1450px;
 }
 
-@media (max-width: 850px) {
-    
+@media (max-width: 1000px) {
+
 }
