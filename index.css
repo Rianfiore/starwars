@@ -158,6 +158,7 @@ main img {
     justify-content: center;
     max-height: 720px;
     max-width: 1920px;
+    width: 100%;
 }
 
 .section1 .about-the-game .info-game {
@@ -176,7 +177,7 @@ main img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -225,6 +226,41 @@ main img {
     max-width: 1450px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
+    .section1 .banner{
+        justify-content: center;
+        margin: 0px;
+        top: 0px;
+        min-height: auto;
+        min-width: auto;
+        width: 30%;
+        height: 100%;
+        transform: scale(1.4);
 
+    }
+
+    .section1 .banner h2{
+        font-size: 2.5vw;
+    }
+
+    .section1 .banner p{
+        font-size: 1.5vw;
+    }
+
+    .section1 .banner button{
+        font-size: 1.5vw;
+    }
+
+    .section1 .about-the-game{
+        flex-direction: column;
+        margin: 0px;
+    }
+
+
+    .section1 .about-the-game .info-game{
+        background-color: blue;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
 }
