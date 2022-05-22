@@ -266,11 +266,11 @@ main img {
   }
 
   .section1 .about-the-game .info-game figure {
-    height: 64vh;
+    height: 65vw;
   }
 
   .section1 .about-the-game .info-game figure img {
-    transform: scale(0.8);
+    min-width: none;
   }
 
   .section1 .about-the-game .info-game .text {
