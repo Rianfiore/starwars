@@ -1,266 +1,306 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    outline: none;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    background: url('img/star\ uó\ topo@2x.png') no-repeat center top;
-    background-size: cover;
-    height: 38.5vw;
-    max-height: 735px;
+  display: flex;
+  flex-direction: column;
+  background: url("img/star\ uó\ topo@2x.png") no-repeat center top;
+  background-size: cover;
+  height: 38.5vw;
+  max-height: 735px;
 }
 
 header div {
-    margin: 0 auto;
-    max-width: 1920px;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 header .title {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-top: 4%;
-    right: 3%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 4%;
+  right: 3%;
 }
 
 header .title .star {
-    position: relative;
-    left: 26%;
+  position: relative;
+  left: 26%;
 }
 
 header .title .kylo-ren {
-    z-index: 1;
-    transform: scale(1.1);
+  z-index: 1;
+  transform: scale(1.1);
 }
 
 header .title .wars {
-    position: relative;
-    right: 10%;
-
+  position: relative;
+  right: 10%;
 }
 
 header .title .create-your-legion {
-    position: relative;
-    right: 19%;
-    padding-top: 12.5%;
-    transform: scale(1.3);
+  position: relative;
+  right: 19%;
+  padding-top: 12.5%;
+  transform: scale(1.3);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main img {
-    width: 100%;
+  width: 100%;
 }
 
 .section1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: url('img/sta\ uo\ robot@2x.png') no-repeat center top;
-    background-size: cover;
-    min-height: 720px;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url("img/sta\ uo\ robot@2x.png") no-repeat center top;
+  background-size: cover;
+  min-height: 720px;
+  width: 100%;
 }
 
-.section1 .banner{
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: clamp(1rem, 3vw, 2rem);
-    padding: 5% 0%;
-    margin-left: 12.5%;
-    margin-top: -3%;
-    width: 100vw;
-    height: 100%;
-    max-width: 350px;
-    min-height: 222px;
-    background: url('img/strom\ trupe\ red.png') no-repeat center;
-    background-size: 110%;
-    color: white;
-    transition: all .2s ease-in-out;
+.section1 .banner {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: 5% 0%;
+  margin-left: 12.5%;
+  margin-top: -3%;
+  width: 100vw;
+  height: 100%;
+  max-width: 350px;
+  min-height: 222px;
+  background: url("img/strom\ trupe\ red.png") no-repeat center;
+  background-size: 110%;
+  color: white;
+  transition: all 0.2s ease-in-out;
 }
 
-.section1 .banner:hover{
-    background-size: 130%;
-    transform: scale(1.02);
-    filter: drop-shadow(2px 2px 5px rgba(0,0,0, 0.5))
+.section1 .banner:hover {
+  background-size: 130%;
+  transform: scale(1.02);
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
-.section1 .banner:hover h2{
-    transform: scale(1.05);
-    text-shadow: 0px 0px 5px rgba(255,255,255,0.8);
+.section1 .banner:hover h2 {
+  transform: scale(1.05);
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
 }
 
-.section1 .banner:hover p{
-    opacity: 1;
-    transform: scale(1.0);
+.section1 .banner:hover p {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .section1 .banner h2 {
-    width: 50%;
-    font-weight: 600;
-    font-size: clamp(1rem, 2vw, 2.5rem);
-    text-transform: uppercase;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
+  width: 50%;
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 2.5rem);
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
 }
 
 .section1 .banner p {
-    width: 80%;
-    min-width: 100px;
-    font-weight: 100;
-    letter-spacing: 0.1px;
-    font-size: clamp(0.5rem, 1vw, 1.5rem);
-    opacity: 0.8;
-    transform: scale(0.95);
-    transition: all 0.2s ease-in-out;
+  width: 80%;
+  min-width: 100px;
+  font-weight: 100;
+  letter-spacing: 0.1px;
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
+  opacity: 0.8;
+  transform: scale(0.95);
+  transition: all 0.2s ease-in-out;
 }
 
 .section1 .banner button {
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 2% 10%;
-    font-size: clamp(0.4rem, 0.9vw, 1.4rem);
-    text-transform: uppercase;
-    transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2% 10%;
+  font-size: clamp(0.4rem, 0.9vw, 1.4rem);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 
 .section1 .banner button:hover {
-    transform: scale(1.2);
-    background-color: rgba(255,255,255, 0.2);
-    backdrop-filter: blur(1px);
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
 }
 
 .section1 .about-the-game {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-height: 720px;
-    max-width: 1920px;
-    width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 720px;
+  max-width: 1920px;
+  width: 100%;
 }
 
 .section1 .about-the-game .info-game {
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 100%;
-    width: 77%;
-    transform: scale(.7);
-    align-self: flex-end;
-    top: 37px;
-    margin-right: 3%;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  width: 77%;
+  transform: scale(0.7);
+  align-self: flex-end;
+  top: 37px;
+  margin-right: 3%;
 }
 
-.section1 .about-the-game .info-game figure{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    overflow: hidden;
+.section1 .about-the-game .info-game figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
 }
 
-.section1 .about-the-game .info-game figure img{
-    width: 100%;
-    min-width: 500px;
+.section1 .about-the-game .info-game figure img {
+  width: 100%;
+  min-width: 500px;
 }
 
 .section1 .about-the-game .info-game .text {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-right: 2%;
-    width: 150%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 2%;
+  width: 150%;
 }
 
-.section1 .about-the-game .info-game .text h2{
-    text-transform: uppercase;
-    font-size: clamp(0.8, 1.8vw, 2rem);
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-    align-items: flex-end;
+.section1 .about-the-game .info-game .text h2 {
+  text-transform: uppercase;
+  font-size: clamp(0.8, 1.8vw, 2rem);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-end;
 }
 
 .section1 .about-the-game .info-game .text p {
-    text-align: right;
-    font-size: clamp(1rem, 1.3vw, 2rem);
-    width: 90%;
+  text-align: right;
+  font-size: clamp(1rem, 1.3vw, 2rem);
+  width: 90%;
 }
 
 .section1 .about-the-game .info-game .line-title {
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background-color: black;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: black;
 }
 
 .section1 .line {
-    padding: 50px 0px;
-    width: 75.5%;
-    max-width: 1450px;
+  padding: 50px 0px;
+  width: 75.5%;
+  max-width: 1450px;
 }
 
 @media (max-width: 1300px) {
-    .section1 .banner{
-        justify-content: center;
-        margin: 0px;
-        top: 0px;
-        min-height: auto;
-        min-width: auto;
-        width: 30%;
-        height: 100%;
-        transform: scale(1.4);
+  .section1 .about-the-game {
+    padding-top: 10%;
+    flex-direction: column;
+    margin: 0px;
+    max-height: none;
+  }
 
-    }
+  .section1 .about-the-game .banner {
+    gap: 50px;
+    justify-content: center;
+    margin: 0px;
+    max-width: none;
+    min-height: auto;
+    min-width: auto;
+    width: 70%;
+    height: 100%;
+  }
 
-    .section1 .banner h2{
-        font-size: 2.5vw;
-    }
+  .section1 .about-the-game .banner h2 {
+    font-size: 3.5vw;
+  }
 
-    .section1 .banner p{
-        font-size: 1.5vw;
-    }
+  .section1 .about-the-game .banner p {
+    font-size: 3vw;
+  }
 
-    .section1 .banner button{
-        font-size: 1.5vw;
-    }
+  .section1 .about-the-game .banner button {
+    font-size: 2.5vw;
+  }
 
-    .section1 .about-the-game{
-        flex-direction: column;
-        margin: 0px;
-    }
+  .section1 .about-the-game .info-game {
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    width: 70%;
+    transform: scale(1);
+    align-self: center;
+  }
 
+  .section1 .about-the-game .info-game figure {
+    height: 64vh;
+  }
 
-    .section1 .about-the-game .info-game{
-        background-color: blue;
-        flex-direction: column;
-        align-items: center;
-        margin: 0px;
-    }
+  .section1 .about-the-game .info-game figure img {
+    transform: scale(0.8);
+  }
+
+  .section1 .about-the-game .info-game .text {
+    width: 200%;
+    height: 100%;
+    min-width: none;
+    align-items: flex-start;
+    padding: 0%;
+    padding-left: 5%;
+    gap: 10px;
+  }
+
+  .section1 .about-the-game .info-game .text h2 {
+    text-align: left;
+    font-size: 3vw;
+    display: flex;
+    align-items: left;
+    gap: 0px;
+  }
+
+  .section1 .about-the-game .info-game .text .line-title {
+    width: 80%;
+    align-self: flex-start;
+  }
+
+  .section1 .about-the-game .info-game .text p {
+    width: 100%;
+    letter-spacing: -1px;
+    font-size: 2.4vw;
+    font-weight: 500;
+    text-align: justify;
+  }
 }
