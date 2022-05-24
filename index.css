@@ -71,7 +71,7 @@ main img {
   align-items: center;
   flex-direction: column;
   background: url("img/sta\ uo\ robot@2x.png") no-repeat center top;
-  background-size: cover;
+  background-size: 100%;
   min-height: 720px;
   width: 100%;
 }
@@ -89,7 +89,7 @@ main img {
   width: 100vw;
   height: 100%;
   max-width: 350px;
-  min-height: 222px;
+  min-height: 500px;
   background: url("img/strom\ trupe\ red.png") no-repeat center;
   background-size: 110%;
   color: white;
@@ -173,16 +173,21 @@ main img {
 }
 
 .section1 .about-the-game .info-game figure {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 .section1 .about-the-game .info-game figure img {
-  width: 100%;
-  min-width: 500px;
+  transform: scale(135%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.section1 .about-the-game .info-game figure img:hover {
+  transform: scale(145%);
 }
 
 .section1 .about-the-game .info-game .text {
@@ -197,7 +202,7 @@ main img {
 
 .section1 .about-the-game .info-game .text h2 {
   text-transform: uppercase;
-  font-size: clamp(0.8, 1.8vw, 2rem);
+  font-size: clamp(1rem, 1.8vw, 2.5rem);
   font-weight: 700;
   display: flex;
   flex-direction: column;
@@ -208,8 +213,8 @@ main img {
 
 .section1 .about-the-game .info-game .text p {
   text-align: right;
-  font-size: clamp(1rem, 1.3vw, 2rem);
-  width: 90%;
+  font-size: clamp(1rem, 1.8vw, 2.2rem);
+  width: 120%;
 }
 
 .section1 .about-the-game .info-game .line-title {
@@ -220,87 +225,119 @@ main img {
 }
 
 .section1 .line {
-  padding: 50px 0px;
+  margin-top: 10%;
   width: 75.5%;
   max-width: 1450px;
+  height: 0.2vw;
+  background-color: black;
+}
+
+.section1 .game-structure {
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  width: 80%;
+  max-height: 720px;
+  max-width: 1920px;
+}
+
+.section1 .game-structure .content {
+  background-color: blue;
+}
+
+.section1 .game-structure figure {
+  position: absolute;
+}
+
+.section1 .game-structure .darth-maul {
+  width: 50%;
+  left: 0%;
+}
+
+.section1 .game-structure .rey {
+  width: 26%;
 }
 
 @media (max-width: 1300px) {
+  .section1 {
+    background-size: 200%;
+  }
   .section1 .about-the-game {
     padding-top: 10%;
     flex-direction: column;
+    align-items: flex-end;
     margin: 0px;
     max-height: none;
+    width: 80%;
   }
 
   .section1 .about-the-game .banner {
-    gap: 50px;
+    gap: 12vw;
     justify-content: center;
     margin: 0px;
     max-width: none;
     min-height: auto;
     min-width: auto;
     width: 70%;
-    height: 100%;
+    height: 90vw;
   }
 
   .section1 .about-the-game .banner h2 {
-    font-size: 3.5vw;
+    font-size: 6vw;
   }
 
   .section1 .about-the-game .banner p {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .section1 .about-the-game .banner button {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
 
   .section1 .about-the-game .info-game {
-    flex-direction: row;
-    align-items: center;
-    margin: 0px;
-    width: 70%;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
     transform: scale(1);
-    align-self: center;
+    height: 20%;
   }
 
   .section1 .about-the-game .info-game figure {
-    height: 65vw;
+    width: 70%;
+    align-self: flex-end;
   }
 
   .section1 .about-the-game .info-game figure img {
-    min-width: none;
+    transform: scale(100%);
   }
 
   .section1 .about-the-game .info-game .text {
-    width: 200%;
-    height: 100%;
-    min-width: none;
-    align-items: flex-start;
-    padding: 0%;
-    padding-left: 5%;
-    gap: 10px;
+    width: 100%;
+    align-items: flex-end;
+    gap: 3vw;
+    padding: 0px;
+    padding-top: 3%;
   }
 
   .section1 .about-the-game .info-game .text h2 {
-    text-align: left;
     font-size: 3vw;
+    text-align: right;
     display: flex;
-    align-items: left;
+    align-items: right;
     gap: 0px;
   }
 
   .section1 .about-the-game .info-game .text .line-title {
-    width: 80%;
-    align-self: flex-start;
+    width: 120%;
+    height: 0.5vw;
+    align-self: flex-end;
   }
 
   .section1 .about-the-game .info-game .text p {
-    width: 100%;
+    width: 90%;
     letter-spacing: -1px;
-    font-size: 2.4vw;
+    font-size: 2.5vw;
     font-weight: 500;
-    text-align: justify;
+    text-align: right;
   }
 }
