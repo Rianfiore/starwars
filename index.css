@@ -263,8 +263,10 @@ main img {
   flex-direction: column;
   align-items: flex-end;
   gap: 1vw;
-  width: 30%;
+  width: 40%;
   text-align: right;
+  z-index: 1;
+  padding-bottom: 15%;
 }
 
 .section1 .game-structure .content h2 {
@@ -280,7 +282,7 @@ main img {
 }
 
 .section1 .game-structure .content nav {
-  width: 100%;
+  width: 70%;
 }
 
 .section1 .game-structure .content nav ul {
@@ -293,19 +295,16 @@ main img {
   text-transform: uppercase;
   font-weight: 500;
   width: 100%;
-  height: 100%;
-  background-color: blue;
-}
-
-.section1 .game-structure .content nav ul span {
+  height: 110%;
   display: flex;
   justify-content: flex-end;
-  background-color: yellow;
+  padding-right: 2.5%;
 }
 
-.section1 .game-structure .content nav ul li span:hover {
+.section1 .game-structure .content nav ul li:hover {
   cursor: pointer;
-  background-color: lightcoral;
+  background-color: #d74430;
+  color: white;
 }
 
 @media (max-width: 1300px) {
