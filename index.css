@@ -312,15 +312,48 @@ main img {
 }
 
 .section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #2d2d2d;
   height: 100vh;
   width: 100%;
+  background-color: yellow;
+}
+
+.section2 .attributes {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 .attributes .gallery {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.section2 .attributes .gallery figure:first-child {
+  width: 50%;
+}
+
+.section2 .attributes .gallery figure {
+  width: 25%;
+}
+
+.section2 .attributes .gallery figure img {
+  background-color: #2d2d2d;
 }
 
 @media (max-width: 1300px) {
   header .title {
     transform: scale(110%);
   }
+
   header .title .create-your-legion {
     transform: scale(300%);
     top: -9vw;
@@ -330,6 +363,7 @@ main img {
   .section1 {
     background-size: 100vw;
   }
+
   .section1 .about-the-game {
     padding-top: 10%;
     flex-direction: column;
@@ -412,24 +446,36 @@ main img {
 
   .section1 .line {
     height: 0.5vw;
+    margin-bottom: 2.5vw;
+  }
+
+  .section1 .game-structure {
+    padding-top: 0px;
+    padding-bottom: 2vw;
+    width: 80%;
   }
 
   .section1 .game-structure figure {
-    transform: scale(1);
+    transform: scale(1.25);
+    position: absolute;
   }
 
   .section1 .game-structure .darth-maul {
-    left: 0%;
+    left: 5%;
+    margin-top: 5%;
   }
 
   .section1 .game-structure .rey {
     right: 5%;
+    margin-top: 8%;
   }
 
   .section1 .game-structure .content {
+    position: relative;
     width: 65%;
-    gap: 2.5vw;
+    gap: 2vw;
     transform: scale(0.8);
+    padding-bottom: 0px;
   }
 
   .section1 .game-structure .content h2 {
