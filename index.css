@@ -644,4 +644,38 @@ main img {
     top: 168vw;
     z-index: 0;
   }
+
+  .section2 {
+    height: auto;
+  }
+
+  .section2 .attributes {
+    display: inline;
+  }
+
+  .section2 .attributes .flex {
+    display: inline;
+    height: 100vw;
+  }
+
+  .section2 .attributes .flex .gallery {
+    display: inline;
+  }
+
+  .section2 .attributes .flex .gallery2 {
+    display: inline;
+  }
+
+  .section2 .attributes .flex .gallery figure {
+    height: 30.48vw;
+  }
+
+  .section2 figure {
+    width: 50vw;
+    height: 30.48vw;
+  }
+  .section2 figure img {
+    width: 50vw;
+    height: 30.48vw;
+  }
 }
