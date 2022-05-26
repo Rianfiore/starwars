@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0px;
@@ -318,35 +319,179 @@ main img {
   background-color: #2d2d2d;
   height: 100vh;
   width: 100%;
-  background-color: yellow;
+  padding: 10vw 0vw;
 }
 
 .section2 .attributes {
-  background-color: green;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 4vw;
 }
 
-.section2 .attributes .gallery {
-  width: 80%;
+.section2 .attributes h2 {
+  padding-left: 5vw;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2.8vw;
+  letter-spacing: -0.05vw;
+  align-self: flex-start;
+}
+
+.section2 .attributes .flex {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1px;
+  width: 80vw;
+  height: 25vw;
 }
 
-.section2 .attributes .gallery figure:first-child {
+.section2 .attributes .flex .gallery {
   width: 50%;
+  height: 100%;
 }
 
-.section2 .attributes .gallery figure {
+.section2 .attributes .flex .gallery2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+}
+
+.section2 .attributes .flex figure .banner,
+.section2 .attributes .flex figure .banner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section2 .attributes .flex figure .banner {
+  background-color: rgba(255, 48, 34, 0.7);
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+}
+
+.section2 .attributes .flex .banner .corners {
+  position: absolute;
+  left: 2.5%;
+  width: 95%;
+  height: 90%;
+  display: flex;
+}
+
+.section2 .attributes .flex .banner .corners figure {
+  position: absolute;
+  background-color: transparent;
+  width: 10%;
+}
+
+.section2 .attributes .flex .banner .corners figure img {
+  background-color: transparent;
+}
+
+.section2 .attributes .flex .banner .corners .corner1 {
+  top: -42.5%;
+}
+
+.corner2 {
+  left: 900%;
+  bottom: -41%;
+}
+
+.section2 .attributes .flex figure .banner .content {
+  color: white;
+  align-items: flex-start;
+  gap: 2.5vw;
+  padding: 3vw;
+  width: 100%;
+  height: 100%;
+}
+
+.section2 .attributes .flex figure .banner .content h3 {
+  text-transform: uppercase;
+  font-size: 2vw;
+  line-height: 2vw;
   width: 25%;
 }
 
-.section2 .attributes .gallery figure img {
+.section2 .attributes .flex figure .banner .content p {
+  font-size: 1.2vw;
+  font-weight: 300;
+  letter-spacing: 0.05vw;
+  width: 100%;
+}
+
+.section2 .attributes .flex figure .banner .content button {
+  z-index: 30;
+  font-size: 1.3vw;
+  background-color: transparent;
+  color: white;
+  border: 0.3vw solid white;
+  padding: 1vw 3vw;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.section2 .attributes .flex figure .banner .content button:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+}
+
+#half .corners figure {
+  position: relative;
+}
+
+#half .corners figure .corner2 {
+  left: 800%;
+}
+
+#half .content {
+  gap: 1.25vw;
+  padding: 1.5vw;
+}
+
+#half .content h3 {
+  font-size: 1vw;
+  line-height: 1vw;
+}
+
+#half .content p {
+  font-size: 0.6vw;
+  letter-spacing: 0.025vw;
+}
+
+#half .content button {
+  font-size: 0.75vw;
+  padding: 0.5vw 1.5vw;
+  border: 0.15vw solid white;
+}
+
+.section2 .attributes .flex figure {
+  position: relative;
+}
+
+.section2 .attributes .flex figure:hover .banner {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.section2 .attributes .flex .gallery figure {
+  height: 100.75%;
+}
+
+.section2 .attributes .flex .gallery2 figure {
+  width: 50%;
+}
+
+.section2 .attributes .flex figure img {
+  position: absolute;
   background-color: #2d2d2d;
+  height: 100%;
 }
 
 @media (max-width: 1300px) {
