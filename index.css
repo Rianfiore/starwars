@@ -185,12 +185,13 @@ main img {
 }
 
 .section1 .about-the-game .info-game figure img {
-  transform: scale(135%);
+  transform: scale(130%);
   transition: transform 0.2s ease-in-out;
 }
 
 .section1 .about-the-game .info-game figure img:hover {
-  transform: scale(145%);
+  transform: scale(140%);
+  cursor: pointer;
 }
 
 .section1 .about-the-game .info-game .text {
@@ -436,7 +437,8 @@ main img {
   cursor: pointer;
 }
 
-.section2 .attributes .flex figure .banner .content button:hover {
+.section2 .attributes .flex figure .banner .content button:hover,
+#half .content button:hover {
   transform: scale(1.2);
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(1px);
@@ -473,6 +475,7 @@ main img {
 
 .section2 .attributes .flex figure {
   position: relative;
+  cursor: pointer;
 }
 
 .section2 .attributes .flex figure:hover .banner {
@@ -557,6 +560,10 @@ main img {
 
   .section1 .about-the-game .info-game figure img {
     transform: scale(100%);
+  }
+
+  .section1 .about-the-game .info-game figure img:hover {
+    transform: scale(115%);
   }
 
   .section1 .about-the-game .info-game .text {
@@ -674,8 +681,69 @@ main img {
     width: 50vw;
     height: 30.48vw;
   }
+
   .section2 figure img {
     width: 50vw;
     height: 30.48vw;
+  }
+
+  .section2 .corners figure img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .section2 .attributes .flex .banner .corners .corner1 {
+    top: -47%;
+  }
+
+  .section2 .attributes .flex .banner .corners .corner2 {
+    left: 945%;
+    bottom: -36.5%;
+  }
+
+  .section2 .attributes .flex .gallery2 figure {
+    width: 100%;
+  }
+
+  .section2 .attributes .flex figure .banner {
+    width: 100%;
+  }
+
+  #half .corners figure .corner2 {
+    left: 850%;
+  }
+
+  #half .content {
+    color: white;
+    align-items: flex-start;
+    gap: 2.5vw;
+    padding: 3vw;
+    width: 100%;
+    height: 100%;
+  }
+
+  #half .content h3 {
+    text-transform: uppercase;
+    font-size: 2vw;
+    line-height: 2vw;
+    width: 25%;
+  }
+
+  #half .content p {
+    font-size: 1.2vw;
+    font-weight: 300;
+    letter-spacing: 0.05vw;
+    width: 100%;
+  }
+
+  #half .content button {
+    z-index: 30;
+    font-size: 1.3vw;
+    background-color: transparent;
+    color: white;
+    border: 0.3vw solid white;
+    padding: 1vw 3vw;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
   }
 }
