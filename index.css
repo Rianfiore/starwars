@@ -576,6 +576,7 @@ main img {
   display: flex;
   background: linear-gradient(#d74430, #d74430);
   justify-content: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .section2 .how-to-play .cards .card .button-bg:hover {
