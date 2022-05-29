@@ -527,9 +527,9 @@ main img {
 
 .section2 .how-to-play figure {
   position: absolute;
-  left: 5vw;
+  left: 4vw;
   margin-top: -18vw;
-  width: 25vw;
+  width: 20vw;
 }
 
 .section2 .how-to-play figure img {
@@ -607,6 +607,7 @@ main img {
   from {
     background-position-x: 0vw;
   }
+
   to {
     background-position-x: 100vw;
   }
@@ -616,6 +617,7 @@ main img {
   from {
     background-position-x: 100vw;
   }
+
   to {
     background-position-x: 0vw;
   }
@@ -913,9 +915,9 @@ main img {
   }
 
   .section2 .how-to-play figure {
-    margin-top: -21vw;
-    left: -27vw;
-    width: 75vw;
+    left: -16vw;
+    margin-top: -18vw;
+    width: 56vw;
   }
 
   .section2 .how-to-play .float-content h2 {
