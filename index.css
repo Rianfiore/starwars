@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "Star Wars";
+  src: url("fonts/StarJedi.woff");
+}
 
 * {
   margin: 0px;
@@ -635,6 +639,15 @@ main img {
   height: 0.25vw;
   background-color: black;
   transition: all 0.5s ease-in-out;
+}
+
+footer .app .star-wars h2 {
+  font-family: "Star Wars";
+  font-size: 10vw;
+  line-height: 8vw;
+  width: 25%;
+  padding-bottom: 2vw;
+  color: white;
 }
 
 @media (max-width: 1300px) {
