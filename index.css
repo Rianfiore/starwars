@@ -306,6 +306,7 @@ main img {
   display: flex;
   justify-content: flex-end;
   padding-right: 2.5%;
+  transition: all 0.25s ease-in-out;
 }
 
 .section1 .game-structure .content nav ul li:hover {
@@ -321,7 +322,6 @@ main img {
   background-color: #2d2d2d;
   height: 100vh;
   width: 100%;
-  padding: 10vw 0vw;
 }
 
 .section2 .attributes {
@@ -641,13 +641,97 @@ main img {
   transition: all 0.5s ease-in-out;
 }
 
+footer .app {
+  width: 60vw;
+  background-color: #ff5a56;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vw;
+  color: white;
+  padding: 2vw 0vw;
+}
+
+footer .app .content {
+  gap: 1.5vw;
+}
+
+footer .app .content h2 {
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  font-weight: 1000;
+}
+
+footer .app .content p,
+footer .app .star-wars p {
+  font-weight: 300;
+  font-size: 0.95vw;
+}
+
+footer .app .content figure img {
+  transition: all 0.2s ease-in-out;
+}
+
+footer .app .content figure img:hover {
+  transform: scale(105%);
+  filter: brightness(1.5);
+}
+
+footer .app .star-wars {
+  position: relative;
+  bottom: 2.5vw;
+  gap: 0.5vw;
+}
+
+footer .app .content,
+footer .app .star-wars {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+footer .download-app {
+  position: relative;
+  left: 10%;
+  display: flex;
+  gap: 1vw;
+  width: 39.5%;
+  cursor: pointer;
+}
+
+footer .line {
+  width: 100%;
+  height: 0.2vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 2vw;
+}
+
+footer figure {
+  width: 20%;
+}
+
 footer .app .star-wars h2 {
+  text-align: left;
   font-family: "Star Wars";
-  font-size: 10vw;
-  line-height: 8vw;
+  font-size: 4.5vw;
+  line-height: 3.8vw;
   width: 25%;
   padding-bottom: 2vw;
-  color: white;
+  padding-left: 1vw;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+footer .app .star-wars h2:hover {
+  transform: scale(102%);
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+footer .darth-vader {
+  width: 35vw;
+  position: absolute;
+  margin-top: -49%;
+  left: 51vw;
 }
 
 @media (max-width: 1300px) {
