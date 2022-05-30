@@ -330,6 +330,7 @@ main img {
   align-items: center;
   justify-content: center;
   gap: 4vw;
+  padding-top: 10vw;
 }
 
 .section2 .attributes h2 {
@@ -896,6 +897,7 @@ footer .darth-vader {
 
   .section2 .attributes {
     display: inline;
+    padding-top: 10vw;
   }
 
   .section2 .attributes h2 {
@@ -1044,5 +1046,73 @@ footer .darth-vader {
 
   .section2 .how-to-play .cards .card p {
     font-size: 2vw;
+  }
+
+  footer {
+    height: 200vw;
+  }
+
+  footer .app {
+    width: 100vw;
+    height: 80%;
+  }
+
+  footer .app .content,
+  footer .app .star-wars {
+    width: 85vw;
+    align-items: center;
+  }
+
+  footer .app .content {
+    padding-top: 10vw;
+    gap: 5vw;
+  }
+
+  footer .app .content h2 {
+    font-size: 12.5vw;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .app .content p {
+    font-size: 3.5vw;
+    width: 90%;
+  }
+
+  footer .app .content .download-app {
+    position: initial;
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  footer .app .line {
+    height: 0.5vw;
+  }
+
+  footer .app .star-wars {
+    align-items: center;
+    padding-bottom: 5vw;
+  }
+
+  footer .app .star-wars h2 {
+    text-align: center;
+    font-size: 12.5vw;
+    line-height: 10vw;
+    width: 70%;
+    padding-left: 0vw;
+  }
+
+  footer .app .star-wars p {
+    text-align: right;
+    text-align-last: right;
+    padding-top: 2.5vw;
+    font-size: 3vw;
+    width: 90%;
+  }
+
+  footer .darth-vader {
+    width: 70vw;
+    left: 10vw;
+    top: 785vw;
   }
 }
