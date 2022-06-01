@@ -16,8 +16,13 @@
 }
 
 a {
+  color: white;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
   color: none; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
+  text-decoration: none; /* no underline */
 }
 
 img {
