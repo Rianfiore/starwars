@@ -1,11 +1,115 @@
+#left-to-right {
+  animation: left-to-right 1s ease-in-out;
+}
+
+@keyframes left-to-right {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(auto);
+  }
+}
+
+#right-to-left {
+  animation: right-to-left 1s ease-in-out;
+}
+
+@keyframes right-to-left {
+  from {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(auto);
+  }
+}
+
 #bottom-to-top {
+  animation: bottom-to-top 1s ease-in-out;
+}
+
+@keyframes bottom-to-top {
+  from {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(auto);
+  }
 }
 
 #top-to-bottom {
+  animation: top-to-bottom 1s ease-in-out;
+}
+
+@keyframes top-to-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(auto);
+  }
 }
 
 #zoom-in {
+  animation: zoom-in 1s ease-in-out;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(auto);
+    opacity: 1;
+  }
 }
 
 #zoom-out {
+  animation: zoom-out 1s ease-in-out;
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(auto);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+#opacity-in {
+  animation: opacity-in 2s ease-in-out;
+}
+
+@keyframes opacity-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#opacity-out {
+  animation: opacity-out 2s ease-in-out;
+}
+
+@keyframes opacity-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
