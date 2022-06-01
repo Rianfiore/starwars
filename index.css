@@ -21,8 +21,8 @@ a {
 }
 
 a:-webkit-any-link {
-  color: none; /* blue colors for links too */
-  text-decoration: none; /* no underline */
+  color: white;
+  text-decoration: none;
 }
 
 img {
