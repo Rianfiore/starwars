@@ -15,6 +15,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
 img {
   width: 100%;
 }
@@ -692,12 +697,14 @@ footer .app .star-wars {
 }
 
 footer .download-app {
-  position: relative;
-  left: 10%;
   display: flex;
+  justify-content: center;
   gap: 1vw;
-  width: 39.5%;
   cursor: pointer;
+}
+
+footer .download-app figure {
+  width: 100%;
 }
 
 footer .line {
