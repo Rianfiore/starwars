@@ -89,7 +89,7 @@
 }
 
 #opacity-in {
-  animation: opacity-in 2s ease-in-out;
+  animation: opacity-in 0.5s ease-in-out;
 }
 
 @keyframes opacity-in {
@@ -102,7 +102,7 @@
 }
 
 #opacity-out {
-  animation: opacity-out 2s ease-in-out;
+  animation: opacity-out 0.5s ease-in-out;
 }
 
 @keyframes opacity-out {
@@ -112,4 +112,12 @@
   to {
     opacity: 0;
   }
+}
+
+#invisible {
+  opacity: 0;
+}
+
+#visible {
+  opacity: 1;
 }
