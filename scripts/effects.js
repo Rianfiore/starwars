@@ -18,7 +18,7 @@ window.addEventListener("scroll", () => {
     ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
 
   if (window.screen.width >= 1300) {
-    if (scrollPercentage >= 10) {
+    if (scrollPercentage >= 5) {
       mainScrollEffect("banner");
       mainScrollEffect("infoGame");
       mainScrollEffect("section1Line");
@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
     if (scrollPercentage >= 50) {
       mainScrollEffect("hierarchy");
     }
-    if (scrollPercentage >= 79) {
+    if (scrollPercentage >= 65) {
       mainScrollEffect("howToPlay");
     }
     if (scrollPercentage >= 90) {
@@ -87,7 +87,8 @@ function headerScrollEffect() {
     header.getElementsByClassName("kylo-ren")[0].id =
     header.getElementsByClassName("star")[0].id =
     header.getElementsByClassName("wars")[0].id =
-      "visible";
+    header.getElementsByClassName("create-your-legion")[0].id =
+      console.log(header.children[0]);
 
   header.getElementsByClassName("kylo-ren")[0].children[0].id = "zoom-in";
 
@@ -95,6 +96,11 @@ function headerScrollEffect() {
     header.getElementsByClassName("star")[0].children[0].id = "left-to-right";
     header.getElementsByClassName("wars")[0].children[0].id = "right-to-left";
   }, 1000);
+
+  setTimeout(() => {
+    header.getElementsByClassName("create-your-legion")[0].children[0].id =
+      "zoom-in";
+  }, 1500);
 }
 
 function mainScrollEffect(renderPart) {
@@ -232,12 +238,16 @@ function mainScrollEffect(renderPart) {
 
     if (renderPart == "attributes") {
       const attributes = section.getElementsByClassName("attributes")[0];
+      (attributes
+        .getElementsByTagName("figure")[0]
+        .getElementsByTagName("div")[0].style.display = "none"),
+        attributes
+          .getElementsByTagName("figure")[0]
+          .getElementsByTagName("div")[0]
+          .removeAttribute("id");
 
       setTimeout(
         () => (attributes.getElementsByTagName("h2")[0].id = "left-to-right"),
-        (attributes
-          .getElementsByTagName("figure")[0]
-          .getElementsByTagName("div")[0].id = "opacity-out"),
         Object.values(
           attributes
             .getElementsByTagName("figure")[0]
@@ -325,7 +335,10 @@ function mainScrollEffect(renderPart) {
           (attributes.getElementsByTagName("figure")[6].id = "visible"),
           (attributes
             .getElementsByTagName("figure")[6]
-            .getElementsByTagName("img")[2].id = "zoom-in")
+            .getElementsByTagName("img")[2].id = "zoom-in"),
+          (attributes
+            .getElementsByTagName("figure")[0]
+            .getElementsByTagName("div")[0].style.display = "flex")
         ),
         225
       );
@@ -352,7 +365,7 @@ function mainScrollEffect(renderPart) {
       const hierarchy = section.getElementsByClassName("hierarchy")[0];
       setTimeout(() => {
         (hierarchy.getElementsByTagName("figure")[0].id = "visible"),
-          (hierarchy.getElementsByTagName("img")[0].id = "zoom-in");
+          (hierarchy.getElementsByTagName("img")[0].id = "bottom-to-top");
       }, 100);
     }
     if (renderPart == "howToPlay") {
